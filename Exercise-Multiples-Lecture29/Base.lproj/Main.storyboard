@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Exercise_Multiples_Lecture29" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +18,63 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chalkboard" translatesAutoresizingMaskIntoConstraints="NO" id="TIs-fK-aHK">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Multiples" translatesAutoresizingMaskIntoConstraints="NO" id="SPf-eu-aHe">
+                                <rect key="frame" x="20" y="48" width="560" height="110"/>
+                                <animations/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Which number to display multiples for?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sW7-ee-7nD">
+                                <rect key="frame" x="141" y="339" width="319" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fib-sW-14Q">
+                                <rect key="frame" x="220" y="435" width="161" height="145"/>
+                                <animations/>
+                                <state key="normal" image="Play"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88 + 88 = 161616" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="giY-gB-qn9">
+                                <rect key="frame" x="20" y="237" width="560" height="58"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="giY-gB-qn9" secondAttribute="trailing" id="35G-gy-wXZ"/>
+                            <constraint firstItem="SPf-eu-aHe" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="3Ei-dt-TM5"/>
+                            <constraint firstItem="giY-gB-qn9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5oi-3N-XjK"/>
+                            <constraint firstItem="SPf-eu-aHe" firstAttribute="centerY" secondItem="TIs-fK-aHK" secondAttribute="centerY" multiplier="2:6" id="I1v-4v-LPN"/>
+                            <constraint firstItem="sW7-ee-7nD" firstAttribute="centerY" secondItem="TIs-fK-aHK" secondAttribute="centerY" multiplier="8:7" id="Kq5-Pc-QbC"/>
+                            <constraint firstItem="giY-gB-qn9" firstAttribute="height" secondItem="TIs-fK-aHK" secondAttribute="height" multiplier="1:10" id="MSm-ax-coJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fib-sW-14Q" secondAttribute="bottom" constant="20" id="Mf9-gE-xTT"/>
+                            <constraint firstItem="sW7-ee-7nD" firstAttribute="centerX" secondItem="TIs-fK-aHK" secondAttribute="centerX" id="WPe-ER-8a9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TIs-fK-aHK" secondAttribute="bottom" id="bPQ-hu-UyF"/>
+                            <constraint firstItem="fib-sW-14Q" firstAttribute="centerX" secondItem="TIs-fK-aHK" secondAttribute="centerX" id="bTf-Y5-uT8"/>
+                            <constraint firstItem="TIs-fK-aHK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="eJS-mn-tZ9"/>
+                            <constraint firstItem="TIs-fK-aHK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="emy-vQ-A8e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SPf-eu-aHe" secondAttribute="trailing" id="enm-JC-X9a"/>
+                            <constraint firstAttribute="trailing" secondItem="TIs-fK-aHK" secondAttribute="trailing" id="h3m-QW-FLb"/>
+                            <constraint firstItem="SPf-eu-aHe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wNm-jn-0Pw"/>
+                            <constraint firstItem="giY-gB-qn9" firstAttribute="centerY" secondItem="TIs-fK-aHK" secondAttribute="centerY" multiplier="6:7" id="yRj-el-bZN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Chalkboard" width="750" height="500"/>
+        <image name="Multiples" width="550" height="110"/>
+        <image name="Play" width="161" height="145"/>
+    </resources>
 </document>

@@ -10,10 +10,10 @@
 		CE53D2D31C0D3D8F00FBE57E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53D2D21C0D3D8F00FBE57E /* AppDelegate.swift */; };
 		CE53D2D51C0D3D8F00FBE57E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53D2D41C0D3D8F00FBE57E /* ViewController.swift */; };
 		CE53D2D81C0D3D8F00FBE57E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE53D2D61C0D3D8F00FBE57E /* Main.storyboard */; };
-		CE53D2DA1C0D3D8F00FBE57E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE53D2D91C0D3D8F00FBE57E /* Assets.xcassets */; };
 		CE53D2DD1C0D3D8F00FBE57E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE53D2DB1C0D3D8F00FBE57E /* LaunchScreen.storyboard */; };
 		CE53D2E81C0D3D8F00FBE57E /* Exercise_Multiples_Lecture29Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53D2E71C0D3D8F00FBE57E /* Exercise_Multiples_Lecture29Tests.swift */; };
 		CE53D2F31C0D3D8F00FBE57E /* Exercise_Multiples_Lecture29UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53D2F21C0D3D8F00FBE57E /* Exercise_Multiples_Lecture29UITests.swift */; };
+		CE53D3011C0D491100FBE57E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE53D3001C0D491100FBE57E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		CE53D2D21C0D3D8F00FBE57E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE53D2D41C0D3D8F00FBE57E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE53D2D71C0D3D8F00FBE57E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE53D2D91C0D3D8F00FBE57E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE53D2DC1C0D3D8F00FBE57E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE53D2DE1C0D3D8F00FBE57E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE53D2E31C0D3D8F00FBE57E /* Exercise-Multiples-Lecture29Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Exercise-Multiples-Lecture29Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +46,7 @@
 		CE53D2EE1C0D3D8F00FBE57E /* Exercise-Multiples-Lecture29UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Exercise-Multiples-Lecture29UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE53D2F21C0D3D8F00FBE57E /* Exercise_Multiples_Lecture29UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise_Multiples_Lecture29UITests.swift; sourceTree = "<group>"; };
 		CE53D2F41C0D3D8F00FBE57E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE53D3001C0D491100FBE57E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,7 @@
 				CE53D2D21C0D3D8F00FBE57E /* AppDelegate.swift */,
 				CE53D2D41C0D3D8F00FBE57E /* ViewController.swift */,
 				CE53D2D61C0D3D8F00FBE57E /* Main.storyboard */,
-				CE53D2D91C0D3D8F00FBE57E /* Assets.xcassets */,
+				CE53D3001C0D491100FBE57E /* Assets.xcassets */,
 				CE53D2DB1C0D3D8F00FBE57E /* LaunchScreen.storyboard */,
 				CE53D2DE1C0D3D8F00FBE57E /* Info.plist */,
 			);
@@ -230,7 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE53D2DD1C0D3D8F00FBE57E /* LaunchScreen.storyboard in Resources */,
-				CE53D2DA1C0D3D8F00FBE57E /* Assets.xcassets in Resources */,
+				CE53D3011C0D491100FBE57E /* Assets.xcassets in Resources */,
 				CE53D2D81C0D3D8F00FBE57E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
