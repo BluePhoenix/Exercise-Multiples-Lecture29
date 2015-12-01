@@ -28,9 +28,18 @@ class Exercise_Multiples_Lecture29UITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testDefaultState() {
+        let app = XCUIApplication()
+        let title = app.images["Multiples"]
+        let result = app.staticTexts.elementBoundByIndex(0)
+        let inputField = app.textFields.elementBoundByIndex(0)
+        let playButton = app.buttons["Play"]
+        
+        XCTAssert(title.exists)
+        XCTAssertEqual(result.label, "")
+        XCTAssertEqual(inputField.label, "")
+        XCTAssertEqual(inputField.placeholderValue, "Which number to display multiples for?")
+        XCTAssert(playButton.exists)
     }
     
 }

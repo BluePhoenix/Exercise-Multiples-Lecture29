@@ -38,7 +38,7 @@
                                 <animations/>
                                 <state key="normal" image="Play"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88 + 88 = 161616" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="giY-gB-qn9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="giY-gB-qn9">
                                 <rect key="frame" x="20" y="237" width="560" height="58"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
