@@ -9,7 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var multiplesTextField: UITextField!
+    
+    var currentMultiple: Int {
+        get {
+            if let enteredText = multiplesTextField.text, enteredMultiple = Int(enteredText) {
+                return enteredMultiple
+            } else {
+                return 0
+            }
+        }
+    }
+    var currentTotal: Int = 0
+    var previousMultiple: Int = 0
+    var previousTotal: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +36,32 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func playTapped(sender: AnyObject) {
+        updateTotals()
+        updateResultLabel()
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
+    }
+    
+    // MARK: Helper functions
+    func updateResultLabel() {
+        resultLabel.text = "\(previousTotal) + \(currentMultiple) = \(currentTotal)"
+    }
+    
+    func updateTotals() {
+        // If currentMultiple and previousMultiple do not match, reset the chain
+        if (currentMultiple != previousMultiple) {
+            // TODO: Reset variables and start a new chain
+            
+        }
+        
+        // At this point, currentTotal contains the value from last time
+        previousTotal = currentTotal
+        currentTotal = previousTotal + currentMultiple
+    }
 
 }
 
