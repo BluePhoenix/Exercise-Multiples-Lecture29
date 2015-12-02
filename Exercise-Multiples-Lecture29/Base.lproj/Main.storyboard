@@ -45,8 +45,8 @@
                                     <action selector="playTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="54k-rs-TGj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="giY-gB-qn9">
-                                <rect key="frame" x="20" y="158" width="560" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="giY-gB-qn9">
+                                <rect key="frame" x="20" y="183" width="560" height="85"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -62,7 +62,7 @@
                             <constraint firstItem="giY-gB-qn9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5oi-3N-XjK"/>
                             <constraint firstItem="SPf-eu-aHe" firstAttribute="centerY" secondItem="TIs-fK-aHK" secondAttribute="centerY" multiplier="2:6" id="I1v-4v-LPN"/>
                             <constraint firstItem="sW7-ee-7nD" firstAttribute="centerY" secondItem="TIs-fK-aHK" secondAttribute="centerY" id="Kq5-Pc-QbC"/>
-                            <constraint firstItem="giY-gB-qn9" firstAttribute="height" secondItem="TIs-fK-aHK" secondAttribute="height" multiplier="1:10" id="MSm-ax-coJ"/>
+                            <constraint firstItem="giY-gB-qn9" firstAttribute="height" secondItem="TIs-fK-aHK" secondAttribute="height" multiplier="1:7" id="MSm-ax-coJ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fib-sW-14Q" secondAttribute="bottom" constant="20" id="Mf9-gE-xTT"/>
                             <constraint firstItem="sW7-ee-7nD" firstAttribute="centerX" secondItem="TIs-fK-aHK" secondAttribute="centerX" id="WPe-ER-8a9"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TIs-fK-aHK" secondAttribute="bottom" id="bPQ-hu-UyF"/>
@@ -73,7 +73,7 @@
                             <constraint firstAttribute="trailing" secondItem="TIs-fK-aHK" secondAttribute="trailing" id="h3m-QW-FLb"/>
                             <constraint firstItem="fib-sW-14Q" firstAttribute="height" secondItem="TIs-fK-aHK" secondAttribute="height" multiplier="1:4" id="mvJ-sc-jUI"/>
                             <constraint firstItem="SPf-eu-aHe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wNm-jn-0Pw"/>
-                            <constraint firstItem="giY-gB-qn9" firstAttribute="centerY" secondItem="TIs-fK-aHK" secondAttribute="centerY" multiplier="5:8" id="yRj-el-bZN"/>
+                            <constraint firstItem="giY-gB-qn9" firstAttribute="centerY" secondItem="TIs-fK-aHK" secondAttribute="centerY" multiplier="6:8" id="yRj-el-bZN"/>
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
