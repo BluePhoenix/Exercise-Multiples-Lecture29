@@ -44,14 +44,10 @@ class Exercise_Multiples_Lecture29UITests: XCTestCase {
     
     func testUserEntersValue() {
         let app = XCUIApplication()
-        let background = app.otherElements.containingType(.TextField, identifier:"Which number to display multiples for?").childrenMatchingType(.Image).elementBoundByIndex(0)
         let result = app.staticTexts.elementBoundByIndex(0)
-        let inputField = app.textFields.elementBoundByIndex(0)
         let playButton = app.buttons["Play"]
         
-        inputField.tap()
-        inputField.typeText("5")
-        background.tap()
+        enterMultiple(5)
         
         playButton.tap()
         XCTAssertEqual(result.label, "0 + 5 = 5")
@@ -66,4 +62,36 @@ class Exercise_Multiples_Lecture29UITests: XCTestCase {
         XCTAssertEqual(result.label, "15 + 5 = 20")
     }
     
+    func testUserChangesValue() {
+        let app = XCUIApplication()
+        let result = app.staticTexts.elementBoundByIndex(0)
+        let playButton = app.buttons["Play"]
+        
+        enterMultiple(5)
+        playButton.tap()
+        XCTAssertEqual(result.label, "0 + 5 = 5")
+        
+        enterMultiple(5)
+        playButton.tap()
+        XCTAssertEqual(result.label, "5 + 5 = 10")
+        
+        enterMultiple(7)
+        playButton.tap()
+        XCTAssertEqual(result.label, "0 + 7 = 7")
+        
+        playButton.tap()
+        XCTAssertEqual(result.label, "7 + 7 = 14")
+        
+    }
+    
+    // MARK: Helper functions
+    func enterMultiple(multiple: Int) {
+        let app = XCUIApplication()
+        let background = app.otherElements.containingType(.TextField, identifier:"Which number to display multiples for?").childrenMatchingType(.Image).elementBoundByIndex(0)
+        let inputField = app.textFields.elementBoundByIndex(0)
+        
+        inputField.tap()
+        inputField.typeText("\(multiple)")
+        background.tap()
+   }
 }

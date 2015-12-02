@@ -54,8 +54,10 @@ class ViewController: UIViewController {
     func updateTotals() {
         // If currentMultiple and previousMultiple do not match, reset the chain
         if (currentMultiple != previousMultiple) {
-            // TODO: Reset variables and start a new chain
-            
+            // Reset variables and start a new chain
+            currentTotal = 0
+            previousMultiple = currentMultiple
+            previousTotal = 0
         }
         
         // At this point, currentTotal contains the value from last time
