@@ -25,7 +25,7 @@
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Multiples" translatesAutoresizingMaskIntoConstraints="NO" id="SPf-eu-aHe">
-                                <rect key="frame" x="20" y="48" width="560" height="110"/>
+                                <rect key="frame" x="20" y="55" width="560" height="97"/>
                                 <animations/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Which number to display multiples for?" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sW7-ee-7nD">
@@ -88,7 +88,7 @@
     </scenes>
     <resources>
         <image name="Chalkboard" width="750" height="500"/>
-        <image name="Multiples" width="550" height="110"/>
+        <image name="Multiples" width="512" height="97"/>
         <image name="Play" width="161" height="145"/>
     </resources>
 </document>
