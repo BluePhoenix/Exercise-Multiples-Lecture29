@@ -103,11 +103,11 @@ class Exercise_Multiples_Lecture29UITests: XCTestCase {
     // MARK: Helper functions
     func enterMultiple(multiple: Int) {
         let app = XCUIApplication()
-        let background = app.otherElements.containingType(.TextField, identifier:"Which number to display multiples for?").childrenMatchingType(.Image).elementBoundByIndex(0)
+        let title = app.images["Multiples"]
         let inputField = app.textFields.elementBoundByIndex(0)
         
         inputField.tap()
         inputField.typeText("\(multiple)")
-        background.tap()
+        title.tap()
    }
 }
