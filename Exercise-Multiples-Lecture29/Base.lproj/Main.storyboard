@@ -21,21 +21,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chalkboard" translatesAutoresizingMaskIntoConstraints="NO" id="TIs-fK-aHK">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Multiples" translatesAutoresizingMaskIntoConstraints="NO" id="SPf-eu-aHe">
-                                <rect key="frame" x="20" y="55" width="560" height="97"/>
+                                <rect key="frame" x="20" y="52" width="560" height="97"/>
                                 <animations/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Which number to display multiples for?" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sW7-ee-7nD">
-                                <rect key="frame" x="141" y="295" width="319" height="30"/>
+                                <rect key="frame" x="141" y="285" width="319" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fib-sW-14Q">
-                                <rect key="frame" x="220" y="435" width="161" height="145"/>
+                                <rect key="frame" x="217" y="430" width="167" height="150"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fib-sW-14Q" secondAttribute="height" multiplier="161:145" id="z3w-lC-FSZ"/>
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="giY-gB-qn9">
-                                <rect key="frame" x="20" y="165" width="560" height="58"/>
+                                <rect key="frame" x="20" y="158" width="560" height="60"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,7 +67,7 @@
                             <constraint firstItem="sW7-ee-7nD" firstAttribute="centerX" secondItem="TIs-fK-aHK" secondAttribute="centerX" id="WPe-ER-8a9"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TIs-fK-aHK" secondAttribute="bottom" id="bPQ-hu-UyF"/>
                             <constraint firstItem="fib-sW-14Q" firstAttribute="centerX" secondItem="TIs-fK-aHK" secondAttribute="centerX" id="bTf-Y5-uT8"/>
-                            <constraint firstItem="TIs-fK-aHK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="eJS-mn-tZ9"/>
+                            <constraint firstItem="TIs-fK-aHK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="eJS-mn-tZ9"/>
                             <constraint firstItem="TIs-fK-aHK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="emy-vQ-A8e"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SPf-eu-aHe" secondAttribute="trailing" id="enm-JC-X9a"/>
                             <constraint firstAttribute="trailing" secondItem="TIs-fK-aHK" secondAttribute="trailing" id="h3m-QW-FLb"/>
@@ -76,6 +76,7 @@
                             <constraint firstItem="giY-gB-qn9" firstAttribute="centerY" secondItem="TIs-fK-aHK" secondAttribute="centerY" multiplier="5:8" id="yRj-el-bZN"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="multiplesTextField" destination="sW7-ee-7nD" id="LuZ-8u-Rmi"/>
                         <outlet property="playButton" destination="fib-sW-14Q" id="S38-BD-4aJ"/>

@@ -20,11 +20,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chalkboard" translatesAutoresizingMaskIntoConstraints="NO" id="MYT-iO-9ka">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Multiples" translatesAutoresizingMaskIntoConstraints="NO" id="Brt-II-Jhc">
-                                <rect key="frame" x="20" y="55" width="560" height="97"/>
+                                <rect key="frame" x="20" y="52" width="560" height="97"/>
                                 <animations/>
                             </imageView>
                         </subviews>
@@ -32,7 +32,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="MYT-iO-9ka" secondAttribute="trailing" id="8GW-DS-sDJ"/>
-                            <constraint firstItem="MYT-iO-9ka" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="UKq-b0-kAf"/>
+                            <constraint firstItem="MYT-iO-9ka" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="UKq-b0-kAf"/>
                             <constraint firstItem="Brt-II-Jhc" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="ctN-3W-ixt"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="MYT-iO-9ka" secondAttribute="bottom" id="dJL-qR-dcH"/>
                             <constraint firstItem="Brt-II-Jhc" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="w9R-KZ-yDO"/>

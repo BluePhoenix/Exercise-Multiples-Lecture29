@@ -68,6 +68,10 @@ class ViewController: UIViewController {
             currentTotal = previousTotal + currentMultiple
         }
     }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
 
 }
 
