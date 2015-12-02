@@ -84,6 +84,22 @@ class Exercise_Multiples_Lecture29UITests: XCTestCase {
         
     }
     
+    func testReachesMaxNumber() {
+        let app = XCUIApplication()
+        let result = app.staticTexts.elementBoundByIndex(0)
+        let playButton = app.buttons["Play"]
+        
+        let halfOfMaxNumber = Int.max/2
+        enterMultiple(halfOfMaxNumber)
+        playButton.tap()
+        XCTAssertEqual(result.label, "0 + \(halfOfMaxNumber) = \(halfOfMaxNumber)")
+        playButton.tap()
+        XCTAssertEqual(result.label, "\(halfOfMaxNumber) + \(halfOfMaxNumber) = \(halfOfMaxNumber*2)")
+        
+        playButton.tap()
+        XCTAssertEqual(result.label, "\(halfOfMaxNumber) + \(halfOfMaxNumber) = \(halfOfMaxNumber*2)")
+    }
+    
     // MARK: Helper functions
     func enterMultiple(multiple: Int) {
         let app = XCUIApplication()

@@ -78,6 +78,7 @@
                     </view>
                     <connections>
                         <outlet property="multiplesTextField" destination="sW7-ee-7nD" id="LuZ-8u-Rmi"/>
+                        <outlet property="playButton" destination="fib-sW-14Q" id="S38-BD-4aJ"/>
                         <outlet property="resultLabel" destination="giY-gB-qn9" id="gXb-sS-1Tg"/>
                     </connections>
                 </viewController>

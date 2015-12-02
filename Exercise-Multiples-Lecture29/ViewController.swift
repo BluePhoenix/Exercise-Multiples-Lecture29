@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var multiplesTextField: UITextField!
+    @IBOutlet weak var playButton: UIButton!
     
     var currentMultiple: Int {
         get {
@@ -60,9 +61,12 @@ class ViewController: UIViewController {
             previousTotal = 0
         }
         
-        // At this point, currentTotal contains the value from last time
-        previousTotal = currentTotal
-        currentTotal = previousTotal + currentMultiple
+        // Test that value will not overflow
+        if currentMultiple <= currentTotal.distanceTo(Int.max) {
+            // At this point, currentTotal contains the value from last time
+            previousTotal = currentTotal
+            currentTotal = previousTotal + currentMultiple
+        }
     }
 
 }
