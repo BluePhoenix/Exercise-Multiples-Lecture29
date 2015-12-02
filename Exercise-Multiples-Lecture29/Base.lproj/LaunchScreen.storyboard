@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,8 +18,27 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chalkboard" translatesAutoresizingMaskIntoConstraints="NO" id="MYT-iO-9ka">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Multiples" translatesAutoresizingMaskIntoConstraints="NO" id="Brt-II-Jhc">
+                                <rect key="frame" x="20" y="55" width="560" height="97"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MYT-iO-9ka" secondAttribute="trailing" id="8GW-DS-sDJ"/>
+                            <constraint firstItem="MYT-iO-9ka" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="UKq-b0-kAf"/>
+                            <constraint firstItem="Brt-II-Jhc" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="ctN-3W-ixt"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="MYT-iO-9ka" secondAttribute="bottom" id="dJL-qR-dcH"/>
+                            <constraint firstItem="Brt-II-Jhc" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="w9R-KZ-yDO"/>
+                            <constraint firstItem="MYT-iO-9ka" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="wYx-gP-x4q"/>
+                            <constraint firstItem="Brt-II-Jhc" firstAttribute="centerY" secondItem="MYT-iO-9ka" secondAttribute="centerY" multiplier="2:6" id="wfC-Jq-y2t"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -25,4 +46,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Chalkboard" width="750" height="500"/>
+        <image name="Multiples" width="512" height="97"/>
+    </resources>
 </document>
